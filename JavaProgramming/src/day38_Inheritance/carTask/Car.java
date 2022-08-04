@@ -2,78 +2,44 @@ package day38_Inheritance.carTask;
 
 public class Car {
 
-    private String brand, model;
-    private int year;
-    private double price;
-    private String color;
-    private double miles;
+    public String brand, model;
+    public int year;
+    public double price;
+    public String color;
+    public int miles;
 
-
-    public Car(String brand, String model, int year, double price, String color, double miles) {
-        setBrand(brand);
-        setModel(model);
-        setYear(year);
-        setPrice(price);
-        setColor(color);
-        setMiles(miles);
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
+    public Car(String brand, String model, int year, double price, String color, int miles) {
         this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
         this.model = model;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
         this.year = year;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
         this.price = price;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
         this.color = color;
-    }
-
-    public double getMiles() {
-        return miles;
-    }
-
-    public void setMiles(double miles) {
         this.miles = miles;
     }
 
-    public void start(){
-        System.out.println(brand );
 
+    public void start(){
+        System.out.println(brand + " " + model + " is starting");
     }
 
 
+    public void drive(){
+        System.out.println("Driving " + brand + " " + model);
+    }
 
 
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", miles=" + miles +
+                '}';
+
+
+    }
 
 
 }
