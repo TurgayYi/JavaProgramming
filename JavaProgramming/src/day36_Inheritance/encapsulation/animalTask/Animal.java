@@ -1,4 +1,4 @@
-package day37_Inheritance.animalTask;
+package day36_Inheritance.encapsulation.animalTask;
 
 public class Animal {
 
@@ -43,10 +43,6 @@ public class Animal {
                 ", color='" + color + '\'' +
                 '}';
     }
-
-
-
-
 
 
 }
