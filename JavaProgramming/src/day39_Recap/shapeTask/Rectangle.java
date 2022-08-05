@@ -51,13 +51,11 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "Square{" +
+        return "Rectangle{" +
                 ", width=" + width +
                 ", length=" + length +
                 ", area=" + area() +
                 ", perimeter=" + perimeter() +
                 '}';
     }
-
-
 }
