@@ -38,6 +38,26 @@ public class Rectangle extends Shape{
     }
 
 
+    @Override
+    public double area() {
+        return width*length;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*(width + length);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                ", width=" + width +
+                ", length=" + length +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
+                '}';
+    }
 
 
 }
