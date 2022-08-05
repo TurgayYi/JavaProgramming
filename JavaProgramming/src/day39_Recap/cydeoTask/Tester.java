@@ -5,10 +5,14 @@ public class Tester extends Employee{
         super(name, age, gender, employeeId, jobTitle, salary);
     }
 
+    public void createTicket(){
+        System.out.println(getJobTitle() + " " + getName() + " is creating ticket" );
+    }
+
 
     @Override
     public void work() {
-        super.work();
+        System.out.println(getJobTitle() + " " + getName() + " is testing app");;
     }
 
 
