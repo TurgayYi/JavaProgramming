@@ -2,8 +2,8 @@ package day39_Recap.deviceTask;
 
 public class Phone extends Device{
 
-    public Phone(String brand, String model, double price, boolean hasBattery) {
-        super(brand, model, price, hasBattery);
+    public Phone(String brand, String model, double price) {
+        super(brand, model, price, true);
     }
 
     public void call(long phoneNum){
