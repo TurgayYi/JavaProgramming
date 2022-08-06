@@ -6,7 +6,13 @@ public class Lion extends WildAnimal{
         super(name, breed, gender, age, size, color, isWild, isFriendly, isPlayable);
     }
 
+    public void hunt(){
+        System.out.println(getBreed() + " " + getName() + " is hunting giraffe");
+    }
 
+    public void roar(){
+        System.out.println(getBreed() + " " + getName() + " is roaring");
+    }
 
 
 
