@@ -83,6 +83,7 @@ public class Device {
                 ", model='" + model + '\'' +
                 ", price=" + price +
                 ", hasBattery=" + hasBattery +
+                ", hasPowerButton=" + hasPowerButton +
                 '}';
 
 

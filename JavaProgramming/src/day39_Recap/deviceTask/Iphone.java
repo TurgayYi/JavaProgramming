@@ -2,8 +2,8 @@ package day39_Recap.deviceTask;
 
 public class Iphone extends Phone{
 
-    public Iphone(String brand, String model, double price) {
-        super(brand, model, price);
+    public Iphone( String model, double price) {
+        super("Apple", model, price);
     }
 
     public void faceTime(long phoneNumber){
