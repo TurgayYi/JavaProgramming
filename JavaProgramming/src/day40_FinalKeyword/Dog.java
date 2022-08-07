@@ -9,6 +9,10 @@ public class Dog extends Animal{
         System.out.println(getName() + " is eating dog food");
     }
 
+    public void bark(){
+        System.out.println(getName() + " is barking");
+    }
+
     /* since the drink () method is final, it can not be overridden
     public void drink(){
         System.out.println(getName() + " is eating dog drink");
