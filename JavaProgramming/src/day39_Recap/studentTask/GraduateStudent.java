@@ -8,7 +8,7 @@ public class GraduateStudent extends Student{
 
 
     public void study() {
-        System.out.println(getName() + " is studying for interview");;
+        System.out.println(getName() + " is studying for interview");
     }
 
 }
