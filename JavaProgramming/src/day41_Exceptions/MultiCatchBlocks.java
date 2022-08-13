@@ -24,6 +24,15 @@ public class MultiCatchBlocks {
             e.printStackTrace();
         }
 
+        System.out.println("Test completed");
+
+        System.out.println("------------------------------------");
+
+        try {
+            System.out.println("Java".charAt(-1));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
 
     }
 }
