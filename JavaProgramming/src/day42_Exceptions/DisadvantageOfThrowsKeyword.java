@@ -12,7 +12,7 @@ public class DisadvantageOfThrowsKeyword {
 
         System.out.println("Hello ");
 
-        MorningWorkOut.sleep(3);// we handled the exception with tr-catch
+        MorningWorkOut.sleep(3);// we handled the exception with try-catch(permanent )
 
         System.out.println("Cydeo");
 
