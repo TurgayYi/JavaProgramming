@@ -1,7 +1,7 @@
 package day42_Exceptions;
 
 public class ThrowsKeyword {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
 
         System.out.println("-------------Test1---------------");
 
