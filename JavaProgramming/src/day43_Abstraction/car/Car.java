@@ -67,3 +67,20 @@ public abstract class Car {
     }
 
 }
+/*
+Car Task:
+	abstract Car:
+		make, model, color, year, price....
+		start();
+		stop()
+
+	Honda extends Car:
+		start(): twist the key to ignition
+
+	Adui extends Car:
+		start(): push the start button
+
+	Tesla extends Car:
+		start(): Say "Start"
+
+ */
