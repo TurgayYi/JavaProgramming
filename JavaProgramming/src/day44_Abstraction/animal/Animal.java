@@ -74,11 +74,15 @@ public abstract class Animal {
 
     public abstract void eat();
 
+    public final void drink(){
+        System.out.println(name + " is drinking water");
+    }
+
 
 
 
     public String toString() {
-        return "Animal{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
