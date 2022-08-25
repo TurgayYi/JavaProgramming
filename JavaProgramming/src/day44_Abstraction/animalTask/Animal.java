@@ -1,6 +1,6 @@
 package day44_Abstraction.animalTask;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private final String breed;
@@ -19,8 +19,8 @@ public class Animal {
             throw new RuntimeException("Invalid gender : " + gender);
         }
         this.gender = gender;
-        this.age = age;
-        this.size = size;
+        setAge(age);
+        setSize(size);
         this.color = color;
     }
 
@@ -28,6 +28,8 @@ public class Animal {
 
     static {
         canBreath = true;
+
+
     }
 
 
@@ -56,6 +58,9 @@ public class Animal {
     }
 
     public void setAge(int age) {
+        if(age <=0){
+            throw new RuntimeException("Invalid age : " + age);
+        }
         this.age = age;
     }
 
@@ -71,12 +76,22 @@ public class Animal {
         return color;
     }
 
+    public final void drink(){
+        System.out.println(name + " is drinking water");
+    }
 
+    public abstract void eat();
 
-
-
-
-
+    public String toString() {
+        return getClass().getSimpleName() +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                ", size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 
 
 }
