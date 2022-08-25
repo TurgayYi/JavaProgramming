@@ -1,6 +1,6 @@
-package day44_Abstraction.animal;
+package day44_Abstraction.animalTask;
 
-public abstract class Animal {
+public class Animal {
 
     private String name;
     private final String breed;
@@ -11,31 +11,34 @@ public abstract class Animal {
 
     public final static boolean canBreath ;
 
-    static {
-        canBreath = true;
-    }
-
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
         this.breed = breed;
 
-        if(!(gender == 'M' || gender == 'F')){
-            throw new RuntimeException("Invalid gender " + gender);
+        if( !(gender == 'M' || gender == 'F') ){
+            throw new RuntimeException("Invalid gender : " + gender);
         }
         this.gender = gender;
-        setAge(age);
-        setSize(size);
+        this.age = age;
+        this.size = size;
         this.color = color;
     }
+
+
+
+    static {
+        canBreath = true;
+    }
+
+
 
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-
-        if(name.isBlank()){
-            throw new RuntimeException("Invalid name " + name);
+        if(name.isEmpty()){
+            throw new RuntimeException("Invalid name : " + name);
         }
         this.name = name;
     }
@@ -53,10 +56,6 @@ public abstract class Animal {
     }
 
     public void setAge(int age) {
-
-        if(age<= 0){
-            throw new RuntimeException("Invalid age " + age);
-        }
         this.age = age;
     }
 
@@ -72,37 +71,24 @@ public abstract class Animal {
         return color;
     }
 
-    public abstract void eat();
-
-    public final void drink(){
-        System.out.println(name + " is drinking water");
-    }
 
 
 
 
-    public String toString() {
-        return getClass().getSimpleName() + "{" +
-                "name='" + name + '\'' +
-                ", breed='" + breed + '\'' +
-                ", gender=" + gender +
-                ", age=" + age +
-                ", size='" + size + '\'' +
-                ", color='" + color + '\'' +
-                '}';
-    }
+
+
+
 
 }
 /*
-Warmup task:
-	Animal Task:
+Animal Task:
 		Create an abstract class named Animal:
 			Variables:
 				name, breed(final), gender(final),  age, size, color(final)
 
 			Encapsulate all the fields
 
-			Add a constructor that can set all the fields
+			Add a cosntructor that can set all the fields
 
 			Methods:
 				eat(); ==> different animals eat different foods
