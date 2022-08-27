@@ -11,6 +11,7 @@ public class ShapeObjects {
         Sphere sphere = new Sphere(4);
         Square square = new Square(5);
         Triangle triangle = new Triangle(5);
+        Cylinder cylinder = new Cylinder(5,4);
 
         System.out.println("circle = " + circle);
         System.out.println("cube = " + cube);
@@ -19,6 +20,7 @@ public class ShapeObjects {
         System.out.println("sphere = " + sphere);
         System.out.println("square = " + square);
         System.out.println("triangle = " + triangle);
+        System.out.println("cylinder = " + cylinder);
 
 
 
