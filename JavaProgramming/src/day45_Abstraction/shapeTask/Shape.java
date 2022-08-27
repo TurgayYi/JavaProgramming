@@ -14,14 +14,12 @@ public abstract class Shape {
 
     public abstract double area();
 
-    public abstract double perimeter();
-
     public String toString() {
-        return  getClass().getSimpleName() + "{" +
+        return
                 "name='" + name + '\'' +
-                "area='" + area() + '\'' +
-                "perimeter='" + perimeter() + '\'' +
-                '}';
+                "area='" + area() + '\''
+
+              ;
 
 
     }

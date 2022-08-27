@@ -1,11 +1,11 @@
 package day45_Abstraction.shapeTask;
 
-public class Square extends Shape implements Perimeter{
+public class Triangle extends Shape implements Perimeter {
 
     private double side;
 
-    public Square(double side) {
-        super("Square");
+    public Triangle( double side) {
+        super("Triangle");
         setSide(side);
     }
 
@@ -20,20 +20,21 @@ public class Square extends Shape implements Perimeter{
         this.side = side;
     }
 
-    public double area() {
-        return side*side;
+    public double area(){
+        return side * side * 1.73 / 4;
     }
 
     public double perimeter() {
-        return 4*side;
+        return 3*side;
     }
 
     public String toString() {
-        return "Square{" +
-                " side=" + side +
-                super.toString()+
+        return "Triangle{" +
+                "side=" + side +
+                super.toString() +
                 ", perimeter=" + perimeter() +
                 '}';
     }
+
 
 }
