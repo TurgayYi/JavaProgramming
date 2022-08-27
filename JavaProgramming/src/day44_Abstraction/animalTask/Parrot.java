@@ -21,4 +21,6 @@ public final class Parrot extends Animal implements Playable,Flyable {
     public void fly() {
         System.out.println(getName() + " can fly 20 km/h");
     }
+
+
 }
