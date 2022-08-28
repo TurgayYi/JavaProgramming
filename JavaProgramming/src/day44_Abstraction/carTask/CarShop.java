@@ -11,6 +11,7 @@ public class CarShop {
         Mercedes mercedes = new Mercedes("Germany","MyBach",2022,255555555,"Black");
         Tesla tesla = new Tesla("US","Model3",2021,329999,"Purple");
         Nio nio = new Nio("China","THY",1988,11,"Pink");
+        CydeoCar cydeoCar = new CydeoCar("STY","Eagle",2000,19999999,"Black-White");
 
         tesla.autoPark();
 
