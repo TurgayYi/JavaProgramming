@@ -1,7 +1,7 @@
 package day34_GarbageCollection_AccesModihiers;
 
 import static day34_GarbageCollection_AccesModihiers.Circle.*;
-import static utilities.MathUtility.*;
+import static day42_Exceptions.utilities.MathUtility.*;
 
 public class Test {
 

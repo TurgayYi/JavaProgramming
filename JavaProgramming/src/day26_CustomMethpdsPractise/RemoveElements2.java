@@ -1,6 +1,6 @@
 package day26_CustomMethpdsPractise;
 
-import utilities.ArraysUtility;
+import day42_Exceptions.utilities.ArraysUtility;
 
 public class RemoveElements2 {
 

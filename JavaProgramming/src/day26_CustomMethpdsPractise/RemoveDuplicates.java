@@ -1,7 +1,5 @@
 package day26_CustomMethpdsPractise;
 
-import utilities.ArraysUtility;
-
 import java.util.Arrays;
 
 public class RemoveDuplicates {
