@@ -1,7 +1,7 @@
 package day01_JavaIntro;
 
 
-import day42_Exceptions.utilities.StringUtility;
+import utilities.StringUtility;
 
 public class Test {
 

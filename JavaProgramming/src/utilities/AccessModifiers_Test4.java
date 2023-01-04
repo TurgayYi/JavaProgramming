@@ -1,4 +1,4 @@
-package day42_Exceptions.utilities;
+package utilities;
 
 import day40_FinalKeyword.ProtectedAccessModifier;
 

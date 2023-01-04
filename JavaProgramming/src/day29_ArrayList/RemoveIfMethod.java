@@ -1,6 +1,6 @@
 package day29_ArrayList;
 
-import day42_Exceptions.utilities.StringUtility;
+import utilities.StringUtility;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package day27_WrapperClasses;
 
-import day42_Exceptions.utilities.ArraysUtility;
+import utilities.ArraysUtility;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package day42_Exceptions.utilities;
+package utilities;
 
 import day34_GarbageCollection_AccesModihiers.AccessModifiers;
 
